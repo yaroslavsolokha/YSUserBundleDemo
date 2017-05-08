@@ -1,0 +1,16 @@
+{% extends 'YSUserBundle::base.html.twig' %}
+
+{% block body %}
+    <div class="main container">
+        <h1>YSUserBundle</h1>
+        <ul>
+            <li><a href="{{ path('sonata_admin_dashboard') }}">Admin</a></li>
+            <li><a href="{{ path('fos_user_security_login') }}">Sign In</a></li>
+            <li><a href="{{ path('fos_user_registration_register') }}">Sign Up</a></li>
+            <li><a href="{{ path('fos_user_resetting_request') }}">Forgot password?</a></li>
+            <li><a href="{{ path('fos_user_profile_show') }}">Show profile</a></li>
+            <li><a href="{{ path('fos_user_profile_edit') }}">Edit profile</a></li>
+            <li><a href="{{ path('fos_user_security_logout') }}">Sign Out</a></li>
+        </ul>
+    </div>
+{% endblock %}
