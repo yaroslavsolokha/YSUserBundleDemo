@@ -38,6 +38,9 @@ require": {
 ```
 ##### 4. Update
 ```
+$ cd server
+$ docker exec -it php /bin/sh
+$ cc ysuserbundle
 $ composer update
 ```
 ##### 5. Add to AppKernel.php
