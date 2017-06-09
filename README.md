@@ -109,6 +109,6 @@ $ bin/console doctrine:schema:create
 ``` 
 {% extends 'YSUserBundle::base.html.twig' %}
 {% block customMenu %}
-    <li><a href="#">Link Name</a></li>
+    <li class="{{ app.request.attributes.get('_route') == 'routeName' ? 'active'><a href="#">Link Name</a></li>
 {% endblock %}
 ```
