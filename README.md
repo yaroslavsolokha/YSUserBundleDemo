@@ -105,3 +105,10 @@ $ bin/console doctrine:schema:create
     </div>
 {% endblock %}
 ```
+##### 15. For adding custom menu link please add:
+``` 
+{% extends 'YSUserBundle::base.html.twig' %}
+{% block customMenu %}
+    <li><a href="#">Link Name</a></li>
+{% endblock %}
+```
